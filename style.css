@@ -43,12 +43,14 @@ header .menu .btn{
     padding: 5px;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, .9);
-    border-left: 1px solid rgba(255, 255, 255, .9);
+    border: 10px solid;
+    border-width: 1px;    
+    /* Para agregar gradiente al borde del objeto  ▼▼*/
+    border-image:linear-gradient(to bottom,rgba(255,255,255,.5),rgba(255,255,255,0)) 1 1%;   
 }
 
 header .menu .btn:hover{
-    background-color:rgba(255, 255, 255, .3);
+    background: linear-gradient(to bottom,rgba(255,255,255,.4),rgba(255,255,255,0));
     border: none;
 }
 .main{
@@ -151,10 +153,20 @@ footer .redes a:hover{
 
     header .menu{
         width: 100%;
-        background:rgba(255,255,255,.2) ;
+        /* background:rgba(255,255,255,.2) ; */
         text-align: center;
         padding: 20px;
     }
+/* 
+    header .menu .btn{
+        border: none;
+    }
+
+    header .menu .btn:hover{
+        background: none;
+        text-decoration: underline;
+    }  */
+          
 
     header .logo{
         margin-bottom: 20px;        
