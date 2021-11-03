@@ -33,15 +33,30 @@ header{
 header .menu a{
     color: #fff;
     text-decoration: none;
-    margin-right: 40px;
     font-size: 18px;
+    /* text-align: center; */
 }
-header .menu a:hover{
-    text-decoration: underline;
+header .menu .btn{
+    display: inline-flex;
+    width: 100px;
+    margin-right: 15px;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid;
+    border-width: 2px;    
+    /* Para agregar gradiente al borde del objeto  ▼▼*/
+    border-image:linear-gradient(to bottom,rgba(255,255,255,.5),rgba(255,255,255,0)) 1 1%;
+    /* border-image:linear-gradient(45deg,rgba(255,255,255,1),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(255,255,255,1)) 1 10%;    */
+}
+
+header .menu .btn:hover{
+    background: linear-gradient(to bottom,rgba(255,255,255,.4),rgba(255,255,255,0));
+    border: none;
 }
 .main{
     background-color: #fff;
-    padding:20px ;
+    padding:25px ;
     width: 70%;
 }
 .main article .thumb{
@@ -65,8 +80,8 @@ header .menu a:hover{
     line-height: 27px;
 }
 
-.main article ul{
-    padding: 0px 10px;
+.main article ul, ol{
+    padding: 0px 20px;
     font-size: 14px;
     line-height: 27px;
     list-style-position: inside;
@@ -76,6 +91,7 @@ header .menu a:hover{
 aside{
     width: 30%;
     background-color: #537dca;
+    background-color: rgba(83,125,202,.3);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -83,12 +99,15 @@ aside{
     justify-content: space-between;
 }
 
-aside .ad{
-    font-size: 30px;
+aside .link{
+    font-size: 20px;
     text-align: center;
-    padding: 50px 0;
+    padding: 10 0 50 0;
     color:#fff;
     background: #4264ae;
+}
+aside .link img{
+    width: 250px;
 }
 
 footer{
@@ -114,6 +133,10 @@ footer .redes a:hover{
     text-decoration: none;
 }
 
+.hidden{
+display: none;
+}
+
 @media screen and (max-width:800px) {
     .main{
         width: 100%;
@@ -130,6 +153,8 @@ footer .redes a:hover{
     }
 }
 
+
+
 @media screen and (max-width:600px) {
     header{
         flex-direction: column;    
@@ -138,10 +163,20 @@ footer .redes a:hover{
 
     header .menu{
         width: 100%;
-        background:rgba(255,255,255,.2) ;
+        /* background:rgba(255,255,255,.2) ; */
         text-align: center;
         padding: 20px;
     }
+/* 
+    header .menu .btn{
+        border: none;
+    }
+
+    header .menu .btn:hover{
+        background: none;
+        text-decoration: underline;
+    }  */
+          
 
     header .logo{
         margin-bottom: 20px;        
