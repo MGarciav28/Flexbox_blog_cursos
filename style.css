@@ -44,9 +44,10 @@ header .menu .btn{
     flex-direction: column;
     align-items: center;
     border: 10px solid;
-    border-width: 1px;    
+    border-width: 2px;    
     /* Para agregar gradiente al borde del objeto  ▼▼*/
-    border-image:linear-gradient(to bottom,rgba(255,255,255,.5),rgba(255,255,255,0)) 1 1%;   
+    border-image:linear-gradient(to bottom,rgba(255,255,255,.5),rgba(255,255,255,0)) 1 1%;
+    /* border-image:linear-gradient(45deg,rgba(255,255,255,1),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(255,255,255,1)) 1 10%;    */
 }
 
 header .menu .btn:hover{
@@ -79,7 +80,7 @@ header .menu .btn:hover{
     line-height: 27px;
 }
 
-.main article ul{
+.main article ul, ol{
     padding: 0px 20px;
     font-size: 14px;
     line-height: 27px;
@@ -98,12 +99,15 @@ aside{
     justify-content: space-between;
 }
 
-aside .ad{
-    font-size: 30px;
+aside .link{
+    font-size: 20px;
     text-align: center;
-    padding: 50px 0;
+    padding: 10 0 50 0;
     color:#fff;
     background: #4264ae;
+}
+aside .link img{
+    width: 250px;
 }
 
 footer{
@@ -129,6 +133,10 @@ footer .redes a:hover{
     text-decoration: none;
 }
 
+.hidden{
+display: none;
+}
+
 @media screen and (max-width:800px) {
     .main{
         width: 100%;
@@ -144,6 +152,8 @@ footer .redes a:hover{
         margin-bottom: 15px;
     }
 }
+
+
 
 @media screen and (max-width:600px) {
     header{
