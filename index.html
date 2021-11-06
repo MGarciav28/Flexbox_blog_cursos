@@ -16,12 +16,13 @@
                 <img src="img/logo.png">
             </div> -->
             <nav class="menu">
-                <div class="btn"><a href="">Inicio</a></div>
+                <div class="btn" id="home"><a href="">Inicio</a></div>
                 <div class="btn"><a href="">Blog</a></div>
                 <div class="btn"><a href="">Contacto</a></div>
             </nav>
         </header>
         <section class="main">
+            <a name ="inicio"></a>
             <article class="article">
                 <div class="thumb">
                     <img src="img/thumb.jpg" alt="">
@@ -79,7 +80,7 @@
                     <li>Hosting y Dominios</li>
                     <li>Extras</li>
                 </ol>
-                <a href="https://www.udemy.com/course/diseno-web/" target="_blank">IR AL CURSO</a>
+                <div class="link-container"><a href="https://www.udemy.com/course/diseno-web/" target="_blank"><div class="link">IR AL CURSO</div></a></div>
             </article>
             <article class="article hidden">
                 <div class="thumb">
@@ -128,7 +129,7 @@
                         <li>Angular con Typescript</li>
                         <li>Clase Final</li>                        
                     </ol>
-                    <a href="https://www.udemy.com/course/universidad-javascript-angular-react-vue-typescript-html-css-bootstrap/" target="_blank">IR AL CURSO</a>
+                    <div class="link-container"><a href="https://www.udemy.com/course/universidad-javascript-angular-react-vue-typescript-html-css-bootstrap/" target="_blank"><div class="link">IR AL CURSO</div></a></div>
                 </div>
             </article>
             <article class="article hidden">
@@ -154,7 +155,7 @@
                         <li>Preguintas sobre el curso</li>
                         <li>Bonos exclusivos y despedida</li>
                     </ol>
-                    <a href="https://www.udemy.com/course/curso-de-flexbox-desde-0/" target="_blank">IR AL CURSO</a>
+                    <div class="link-container"><a href="https://www.udemy.com/course/curso-de-flexbox-desde-0/" target="_blank"><div class="link">IR AL CURSO</div></a></div>
                 </div>
             </article>
             <article class="article hidden">
@@ -192,65 +193,66 @@
                         <li>de PSD a HTML5 con Bootstrap 4</li>
                         <li>(WordPress CMS) Creando Template desde cero</li>
                     </ol>
-                    <a target="_blank" href="https://www.udemy.com/course/desarrollo-web-desde-cero-paso-a-paso/">IR AL CURSO</a>
-                    </div>
                     
-                                                                                                                    
+                    <div class="link-container"><a target="_blank" href="https://www.udemy.com/course/desarrollo-web-desde-cero-paso-a-paso/"><div class="link">IR AL CURSO</div></a></div></div>
             </article>
         </section>
         <aside>
             <div class="wrap-content">
-                <div class="link" id="1">
-                    <div class="news-card">
+                <a href="#inicio">
+                    <div class="news-card" id="1">                    
                         <img src="img/thumb-falconmasters.jpg" alt="" class="news-card_image">
                         <div class="text-wrapper">
                             <div class="details"><span class="news-card-title">Diseño Web Profesional El Curso Completo, Práctico y desde 0</span></div>
-                        </div>
+                        </div>                        
                     </div>
-            </div>
+                </a>
             </div>
             <div class="wrap-content">
-                <div class="link" id="2">
-                    <div class="news-card">
-                        <img src="img/thumb-UJavascript.jpg" alt="" class="news-card_image">
-                        <div class="text-wrapper">
-                            <div class="details"><span class="news-card-title">Universidad JavaScript 2021 - De Cero a Experto JavaScript!</span></div>
-                        </div>
+                <a href="#inicio">
+                    <div class="news-card" id="2">
+                            <img src="img/thumb-UJavascript.jpg" alt="" class="news-card_image">
+                            <div class="text-wrapper">
+                                <div class="details"><span class="news-card-title">Universidad JavaScript 2021 - De Cero a Experto JavaScript!</span></div>
+                            </div>
                     </div>
-            </div>
+                </a>
+
             </div>
             <div class="wrap-content">
-                <div class="link" id="3">
-                    <div class="news-card">
-                        <img src="img/thumb-flexbox.jpg" alt="" class="news-card_image">
-                        <div class="text-wrapper">
-                            <div class="details"><span class="news-card-title">Curso de FlexBox desde 0</span></div>
-                        </div>
-                    </div>
-            </div>
+                <a href="#inicio">
+                    <div class="news-card" id="3">
+                            <img src="img/thumb-flexbox.jpg" alt="" class="news-card_image">
+                            <div class="text-wrapper">
+                                <div class="details"><span class="news-card-title">Curso de FlexBox desde 0</span></div>
+                            </div>
+                        
+                                </div>
+                </a>
             </div>
             <div class="wrap-content">
-                <div class="link" id="4">
-                    <div class="news-card">
-                        <img src="img/thumb-DWeb.jpg" alt="" class="news-card_image">
-                        <div class="text-wrapper">
-                            <div class="details"><span class="news-card-title">Conviértete en un Desarrollador Web desde cero Paso a Paso</span></div>
-                        </div>
-                    </div>
-            </div>
-            </div>
+                <a href="#inicio">
+                    <div class="news-card" id="4">
+                            <img src="img/thumb-DWeb.jpg" alt="" class="news-card_image">
+                            <div class="text-wrapper">
+                                <div class="details"><span class="news-card-title">Conviértete en un Desarrollador Web desde cero Paso a Paso</span></div>
+                            </div>                    
+                                </div>
+                                </div>
+                </a>
         </aside>
         <footer>
             <div class="autor">
                 <p>Creado por Miguel Angel Garcia </p>
             </div>
             <div class="redes">
-                <a href="">Facebook</a>
-                <a href="">Instagram</a>
-                <a href="">Linkedin</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Linkedin</a>
             </div>
         </footer>
     </div>
 <script src="script.js"></script>
+<script>window.onload = aviso;</script>
 </body>
 </html>
