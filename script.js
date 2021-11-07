@@ -1,12 +1,12 @@
 var articulos = document.getElementsByClassName('article');
 var enlaces = document.getElementsByClassName('news-card');
-
+var inicio = document.getElementById('0');
 
 for(let i=0; i<=enlaces.length-1; i++){
     enlaces[i].addEventListener('click', cambio);
 }
 
-
+inicio.addEventListener('click', cambio);
 
 function cambio(){
 var valor = this.id;
