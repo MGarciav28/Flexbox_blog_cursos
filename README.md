@@ -1,0 +1,2 @@
+# PRESENTACIÓN DEL PROYECTO
+Este proyecto fue llevado a cabo utilizando las tecnologías tradicionales de HTML, CSS y Javascript, ademas del modelo flexbox para agilizar la alineacion y presentación de los componentes, buscando una experiencia responsive fluida y atractiva.
